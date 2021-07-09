@@ -15,7 +15,7 @@ conn = sqlite3.connect('CountriesData.db')
 curr = conn.cursor()
 
 #Creating a table named CountriesGDP
-conn.execute('''CREATE TABLE IF NOT EXISTS CountriesGDP(
+curr.execute('''CREATE TABLE IF NOT EXISTS CountriesGDP(
                     Country_Name TEXT, 
                     GDP_nominal_Dollar INTEGER, 
                     GDP_abbrev__Dollar text, 
