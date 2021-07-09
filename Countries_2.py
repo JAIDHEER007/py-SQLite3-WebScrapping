@@ -29,14 +29,6 @@ remove_coma = lambda num:int((num.replace(',','')))
 transaction = 1
 for table_row in table_rows:
     data = table_row.find_all('td')
-    # print('='*10)
-    # print('Country_Name:',)
-    # print('Country_Code:',)
-    # print('ISO_Code:',)
-    # print('Population:',)
-    # print('Area_KM2:',)
-    # print('GDP_US_Dollar:',)
-    # print('='*10)
     
     country_data = (data[0].text,data[1].text,data[2].text,
                     remove_coma(data[3].text),remove_coma(data[4].text),data[5].text)
